@@ -16,8 +16,8 @@ public class NegativosController {
 			n -= 1;
 			return Negativo(vetor, n, negativo);
 			}
-		/*O vetor de índice n vai sendo comparado com o mesmo vetor de índice n - 1 e 
-		 será adicionada à uma variável string o valor negativo para dado de saída*/
+		/*O vetor de índice n vai sendo comparado com o mesmo vetor de índice n - 1 até que n se torne
+		 negativo e se o valor for negativo será adicionado à uma variável string*/
 		}
 		
 	}
