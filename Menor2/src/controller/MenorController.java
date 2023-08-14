@@ -18,6 +18,8 @@ public class MenorController {
 			i -= 1;
 			return Menor(vetor, i, menor);
 		}
-		/*retorna*/
+		/*a recursiva determina o menor valor como sendo o último do vetor e faz a checagem com 
+		 o mesmo vetor de índice i - 1 até que o índice se torne negativo, e substitui seu valor 
+		 caso encontre um número menor */
 	}
 }
