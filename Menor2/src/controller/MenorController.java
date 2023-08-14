@@ -6,7 +6,7 @@ public class MenorController {
 	}
 
 	public int Menor(int[] vetor, int i, int menor) {
-		// condição de parada ==> quando o �ndice i == 0
+		// condição de parada ==> quando o índice i == 0
 		if (i < 0) {
 			return menor;
 		}
