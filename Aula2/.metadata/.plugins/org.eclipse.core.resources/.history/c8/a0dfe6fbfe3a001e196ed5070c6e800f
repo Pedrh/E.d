@@ -1,0 +1,19 @@
+package controller;
+
+public class MultiplicaController {
+
+	public MultiplicaController() {
+		super();	
+	}
+	
+	public int multiplica(int a, int b) {
+		//condição de parada ==> quando b=1
+		if(b == 1) {
+			return a;
+		}else {
+			b -= 1;
+			return a + multiplica(a, b);
+		}
+	}
+
+}

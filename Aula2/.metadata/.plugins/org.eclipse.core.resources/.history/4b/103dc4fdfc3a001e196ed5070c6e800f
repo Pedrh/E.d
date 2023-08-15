@@ -1,0 +1,9 @@
+package controller;
+
+public class ParController {
+
+	public ParController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

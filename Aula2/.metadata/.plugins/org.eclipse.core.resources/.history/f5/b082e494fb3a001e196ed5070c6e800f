@@ -1,0 +1,20 @@
+package controller;
+
+public class DivisaoController {
+
+	public DivisaoController() {
+		super();
+	}
+
+	public int divisao(int a, int b) {
+		int div = a -b;
+		//condição de parada ==> quando a - b < 0
+		if(div <= 0 ) {
+			return div *(-1);
+		}else {
+			a -= b;
+			return divisao(a, b);
+		}
+	}
+
+}

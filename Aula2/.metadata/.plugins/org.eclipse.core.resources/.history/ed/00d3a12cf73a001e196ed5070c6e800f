@@ -1,0 +1,9 @@
+package controller;
+
+public class MultiplicaController {
+
+	public MultiplicaController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

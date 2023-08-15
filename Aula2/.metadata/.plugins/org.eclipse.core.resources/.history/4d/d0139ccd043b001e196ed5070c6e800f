@@ -1,0 +1,9 @@
+package controller;
+
+public class MdcController {
+
+	public MdcController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}

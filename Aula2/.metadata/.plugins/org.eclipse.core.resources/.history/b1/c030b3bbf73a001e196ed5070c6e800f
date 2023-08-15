@@ -1,0 +1,13 @@
+package view;
+import controller.MultiplicaController;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		
+		
+		int  a = 4, b = 5;
+		res = 
+	}
+
+}

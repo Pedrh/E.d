@@ -1,0 +1,24 @@
+package controller;
+
+public class MdcController {
+
+	public MdcController() {
+		super();
+	}
+	
+	public int MDC(int x, int y) {
+		//condição de saída ==> quando x = y
+		if(x == y) {
+			return x;
+		}
+		if(x < y) {
+			return MDC(y, x); 
+		}else {
+			int resultado = MDC(x - y, y);
+			return resultado;
+		}
+		/*a função vai chamando a si mesma enquanto subtrai os parâmetros até que 
+		ambos sejam iguais (caso não sejam de início)*/
+	}
+
+}

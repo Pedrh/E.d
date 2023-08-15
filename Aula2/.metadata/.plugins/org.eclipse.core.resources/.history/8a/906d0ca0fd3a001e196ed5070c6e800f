@@ -1,0 +1,11 @@
+package view;
+import controller.ParController;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		int[] vet = {5, 13, 8, 7, 6, 9, 20};
+
+	}
+
+}

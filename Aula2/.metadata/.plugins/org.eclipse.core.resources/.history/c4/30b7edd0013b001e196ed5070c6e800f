@@ -1,0 +1,18 @@
+package controller;
+
+public class FatorialController {
+
+	public FatorialController() {
+		super();
+	}
+	
+	public int Fatorial(int n) {
+		//condição de parada ==> quando n =1
+		if(n==1) {
+			return n;
+		}else {
+			return n * Fatorial(n - 2);
+		}
+	}
+
+}

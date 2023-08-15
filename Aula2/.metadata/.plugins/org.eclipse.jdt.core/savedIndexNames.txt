@@ -1,0 +1,7 @@
+INDEX VERSION 1.131+D:\FATEC\E.D\Aula2\.metadata\.plugins\org.eclipse.jdt.core
+1522137334.index
+47780248.index
+1645549460.index
+1865797976.index
+2679209708.index
+2173273995.index

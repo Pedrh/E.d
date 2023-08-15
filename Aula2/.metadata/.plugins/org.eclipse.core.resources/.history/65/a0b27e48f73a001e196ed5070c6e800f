@@ -1,0 +1,20 @@
+package controller;
+
+public class MultiplicaController {
+
+	public MultiplicaController() {
+		super();	
+	}
+	
+	public int multiplica(int a, int b, int c) {
+		//condição de parada ==> quando c=b
+		if(c==b) {
+			return 1;
+		}else {
+			c -= 1;
+			int mult = 0;
+			return mult = a + multiplica(a, b, c);
+		}
+	}
+
+}

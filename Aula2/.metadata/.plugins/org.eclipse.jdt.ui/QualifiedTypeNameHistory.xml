@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+    <fullyQualifiedTypeName name="controller.MultiplicaController"/>
+    <fullyQualifiedTypeName name="controller.DivisaoController"/>
+    <fullyQualifiedTypeName name="controller.ParController"/>
+    <fullyQualifiedTypeName name="controller.FatorialController"/>
+    <fullyQualifiedTypeName name="java.util.Scanner"/>
+    <fullyQualifiedTypeName name="java.lang.System"/>
+    <fullyQualifiedTypeName name="controller.MdcController"/>
+</qualifiedTypeNameHistroy>
