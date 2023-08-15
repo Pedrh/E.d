@@ -2,5 +2,8 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="java.lang.Deprecated"/>
     <fullyQualifiedTypeName name="controller.Digito"/>
+    <fullyQualifiedTypeName name="controller.FiboController"/>
     <fullyQualifiedTypeName name="controller.DigitoController"/>
+    <fullyQualifiedTypeName name="controller.InversaoController"/>
+    <fullyQualifiedTypeName name="controller.BinarioController"/>
 </qualifiedTypeNameHistroy>
