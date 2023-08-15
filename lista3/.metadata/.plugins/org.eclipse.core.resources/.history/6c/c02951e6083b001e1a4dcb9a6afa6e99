@@ -1,0 +1,21 @@
+package controller;
+
+public class DigitoController {
+
+	public DigitoController() {
+		super();
+	}
+	
+	public int Digitos(int n, int qtd) {
+		//condição de parada n == 0
+		if(n == 0) {
+			return qtd;
+		}else {
+			n = n / 10;
+			qtd += 1;
+			return Digitos(n, qtd);
+		}
+		//a função divide o valor recebido por 10 e adiciona 1 à um contador enquanto o resultado da divisão não for 0,...
+	}
+
+}

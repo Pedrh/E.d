@@ -1,0 +1,20 @@
+package controller;
+
+public class DigitoController {
+
+	public DigitoController() {
+		super();
+	}
+	
+	public int Digitos(int n, int qtd) {
+		//condição de parada n == 0
+		if(n == 0) {
+			return qtd;
+		}else {
+			n = n / 10;
+			qtd += 1;
+			return Digitos(n, qtd);
+		}
+	}
+
+}

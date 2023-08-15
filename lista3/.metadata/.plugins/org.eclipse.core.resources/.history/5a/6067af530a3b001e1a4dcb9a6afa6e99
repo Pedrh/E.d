@@ -1,0 +1,14 @@
+package controller;
+
+public class FiboController {
+
+	public FiboController() {
+		super();
+	}
+	
+	public void  Fib(int n) {
+		//condição de parada ==> Quando o contador for igual ao número recebido
+		//deixei como void pra não ficar tudo vermelho. troca por int!!!
+	}
+
+}

@@ -1,0 +1,9 @@
+package controller;
+
+public class FiboController {
+
+	public FiboController() {
+		// TODO Auto-generated constructor stub
+	}
+
+}
