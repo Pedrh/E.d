@@ -6,4 +6,6 @@
     <fullyQualifiedTypeName name="controller.DigitoController"/>
     <fullyQualifiedTypeName name="controller.InversaoController"/>
     <fullyQualifiedTypeName name="controller.BinarioController"/>
+    <fullyQualifiedTypeName name="java.lang.SecurityException"/>
+    <fullyQualifiedTypeName name="controller.SerieFcontroller"/>
 </qualifiedTypeNameHistroy>
