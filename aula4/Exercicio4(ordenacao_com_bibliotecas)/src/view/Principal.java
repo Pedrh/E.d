@@ -1,13 +1,13 @@
 package view;
 
-import libBubbleSort.Bubbler_sort;
+import libBubbleSort.Bubble_sort;
 import libMergeSort.MergeSort;
 
 public class Principal {
 
 	public static void main(String[] args) {
 		MergeSort OrdenaMS = new MergeSort();
-		Bubbler_sort OrdenaBS = new Bubbler_sort();	
+		Bubble_sort OrdenaBS = new Bubble_sort();	
 		
 		int[] vet1 = {74, 20, 71, 87, 81, 16, 25, 99, 44, 58};
 		int tamanho = vet1.length - 1;

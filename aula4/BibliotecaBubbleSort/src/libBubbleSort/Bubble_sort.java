@@ -1,8 +1,8 @@
 package libBubbleSort;
 
-public class Bubbler_sort {
+public class Bubble_sort {
 
-	public Bubbler_sort() {
+	public Bubble_sort() {
 		super();
 	}
 	
