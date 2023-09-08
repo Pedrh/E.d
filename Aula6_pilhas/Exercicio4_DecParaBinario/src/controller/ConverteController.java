@@ -1,36 +1,45 @@
 package controller;
 
-import model.pilhaInt;
+import model.PilhaStrings;
 
 public class ConverteController {
-	pilhaInt p = new pilhaInt();
-	
+	PilhaStrings p = new PilhaStrings();
+
 	public ConverteController() {
 		super();
 	}
-	
+
 	public void ConverteController(int valor) throws Exception {
-		decToBin(valor);
-		System.out.print("Número " + valor + " em binário:");
-		do {
-			String ValorFinal = p.pop() + "";
-			System.out.print(ValorFinal);
-		}while(!p.isEmpty());
+		System.out.println("Número " + valor + " em binário: " + decToBin(valor));
 	}
 
 	public String decToBin(int valor) {
-		if (valor / 2 == 0) {
-			if (valor % 2 != 0) {
-				p.push(valor % 2);
-				return valor + "";
-			} else {
-				return valor + "";
+		if (valor == 0) {
+			return "0";
+		}
+		if (valor == 1) {
+
+			StringBuffer Sbin = new StringBuffer();
+			p.push("1");
+
+			try {
+				do {
+					
+					Sbin.append(p.top());
+					p.pop();
+					
+				} while (p != null);
+			} catch (Exception e) {
+
 			}
 
+			return Sbin.toString();
+
 		} else {
-			p.push(valor % 2);
+			String resto = String.valueOf(valor % 2);
+			p.push(resto);
 			valor = valor / 2;
-			return decToBin(valor) + valor;
+			return decToBin(valor);
 		}
 	}
 }

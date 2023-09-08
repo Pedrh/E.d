@@ -3,6 +3,7 @@ package view;
 import javax.swing.JOptionPane;
 
 import controller.ConverteController;
+import model.PilhaStrings;
 
 public class Main {
 
