@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+C:\Users\Familia\OneDrive\Documentos\programas\eclipse\WorkSpace\E.d\Aula6_lista2Pilhas\.metadata\.plugins\org.eclipse.jdt.core
+1865797976.index
+3393361490.index
+1209017176.index

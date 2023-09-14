@@ -1,0 +1,24 @@
+package controller;
+
+import model.pilhaInt;
+
+public class FatController {
+
+	public FatController() {
+		super();
+	}
+	
+	public long fatorial(int n) {
+		pilhaInt p = new pilhaInt();
+		if(n==1) {
+			do {
+				
+			}while(!p.isEmpty());
+			n = n * p.pop();
+			return n;
+		}
+		p.push(n);
+		n = n -1;
+	}
+
+}

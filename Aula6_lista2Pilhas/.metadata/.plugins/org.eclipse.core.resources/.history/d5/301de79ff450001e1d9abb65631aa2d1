@@ -1,0 +1,17 @@
+package view;
+
+import javax.swing.JOptionPane;
+
+import controller.FatController;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		FatController Fc =new FatController();
+		
+		do {
+			int Num = Integer.parseInt(JOptionPane.showInputDialog("Digite um número de 0 a 10: "));
+		}
+	}
+
+}

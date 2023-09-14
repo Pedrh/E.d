@@ -1,0 +1,15 @@
+package view;
+
+import controller.Operacoes_vetor_pilha;
+
+public class Principal {
+
+	public static void main(String[] args) {
+		Operacoes_vetor_pilha Op =new Operacoes_vetor_pilha();
+		
+		int[] vetor = {0, 5, 7, -4, 3, 5, -2, -1, 10, 4, 3, -6, 2, -9};
+		
+	}
+	
+	
+}

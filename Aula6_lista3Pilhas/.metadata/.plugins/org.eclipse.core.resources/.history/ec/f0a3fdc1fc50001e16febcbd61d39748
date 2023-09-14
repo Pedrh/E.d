@@ -1,0 +1,15 @@
+package controller;
+
+public class Operacoes_vetor_pilha {
+
+	public Operacoes_vetor_pilha() {
+		super();
+	}
+	
+	public int VetorPilha(int[] vetor, int tamanho){
+		for(int i = 0; i < tamanho; i++) {
+			
+		}
+	}
+
+}

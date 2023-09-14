@@ -1,0 +1,5 @@
+INDEX VERSION 1.131+E:\FATEC\E.D\Aula6_lista3Pilhas\.metadata\.plugins\org.eclipse.jdt.core
+3167029366.index
+1865797976.index
+2532526398.index
+2101773976.index

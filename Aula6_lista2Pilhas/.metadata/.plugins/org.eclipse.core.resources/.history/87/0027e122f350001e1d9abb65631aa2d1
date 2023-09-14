@@ -1,0 +1,13 @@
+package controller;
+
+public class FatController {
+
+	public FatController() {
+		super();
+	}
+	
+	public long fatorial(int n) {
+		int i = 0;
+	}
+
+}

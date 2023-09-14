@@ -1,0 +1,31 @@
+package controller;
+
+import model.pilhaInt;
+
+public class Operacoes_vetor_pilha {
+
+	public Operacoes_vetor_pilha() {
+		super();
+	}
+	
+	pilhaInt p = new pilhaInt();
+	
+	public int VetorPilha(int[] vetor, int tamanho){
+		for(int i = 0; i < tamanho; i++) {
+			if(vetor[i] >= 0) {
+				p.push(vetor[i]);
+			}else {
+				try {
+					int v1 = p.pop();
+					int v2 = p.pop();
+					int soma = v1 + v2;
+					p.push(vetor[i]);
+					p.push(v2);
+				} catch (Exception e) {
+					
+				}
+			}
+		}
+	}
+
+}
