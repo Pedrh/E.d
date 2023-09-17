@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
-    <fullyQualifiedTypeName name="model.pilhaInt"/>
     <fullyQualifiedTypeName name="javax.management.openmbean.OpenDataException"/>
     <fullyQualifiedTypeName name="controller.Operacoes_vetor_pilha"/>
+    <fullyQualifiedTypeName name="model.pilhaInt"/>
+    <fullyQualifiedTypeName name="model.PilhaStrings"/>
     <fullyQualifiedTypeName name="controller.PilhaChar"/>
 </qualifiedTypeNameHistroy>

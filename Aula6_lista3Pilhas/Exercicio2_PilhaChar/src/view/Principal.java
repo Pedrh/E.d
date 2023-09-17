@@ -8,6 +8,7 @@ public class Principal {
 		PilhaChar pc = new PilhaChar();
 		
 		String[] vetor = {"w", "l", "h", "b", "r", "g", "j"};
+		pc.OrdemAvulsa(vetor);
 	}
 
 }
