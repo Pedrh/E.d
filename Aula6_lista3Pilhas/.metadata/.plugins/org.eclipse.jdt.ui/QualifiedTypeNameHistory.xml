@@ -2,7 +2,15 @@
 <qualifiedTypeNameHistroy>
     <fullyQualifiedTypeName name="javax.management.openmbean.OpenDataException"/>
     <fullyQualifiedTypeName name="controller.Operacoes_vetor_pilha"/>
-    <fullyQualifiedTypeName name="model.pilhaInt"/>
-    <fullyQualifiedTypeName name="model.PilhaStrings"/>
     <fullyQualifiedTypeName name="controller.PilhaChar"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuffer"/>
+    <fullyQualifiedTypeName name="java.lang.StringBuilder"/>
+    <fullyQualifiedTypeName name="javax.swing.plaf.metal.MetalBorders.PaletteBorder"/>
+    <fullyQualifiedTypeName name="controller.PalindromoController"/>
+    <fullyQualifiedTypeName name="javax.swing.JOptionPane"/>
+    <fullyQualifiedTypeName name="controller.HistoricoController"/>
+    <fullyQualifiedTypeName name="model.PilhaStrings"/>
+    <fullyQualifiedTypeName name="model.pilhaInt"/>
+    <fullyQualifiedTypeName name="java.lang.Integer"/>
+    <fullyQualifiedTypeName name="controller.NPRController"/>
 </qualifiedTypeNameHistroy>
