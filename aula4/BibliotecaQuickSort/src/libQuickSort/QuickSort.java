@@ -1,12 +1,12 @@
 package libQuickSort;
 
-public class QuickSort {
+public class QuickSort<T extends Comparable<T>> {
 
 	public QuickSort() {
 		super();
 	}
 	
-	public int[] quicksort(int[] vetor, int inicio, int fim) {
+	public T[] quicksort(T[] vetor, int inicio, int fim) {
 		if(inicio < fim) {
 			int posicaoPivoFixo = ordenar(vetor, inicio, fim);
 			//dividir o vetor em dois
@@ -16,16 +16,16 @@ public class QuickSort {
 		return vetor;
 	}
 	
-	private int ordenar(int vetor[], int inicio, int fim) {
-			int pivo = vetor[inicio];
+	private int ordenar(T vetor[], int inicio, int fim) {
+			T pivo = vetor[inicio];
 			int ponteiroEsquerda = inicio + 1;
 			int ponteiroDireita = fim;
 			
 			while(ponteiroEsquerda < ponteiroDireita) {
-				while(ponteiroEsquerda <= ponteiroDireita && vetor[ponteiroEsquerda] <= pivo) {
+				while(ponteiroEsquerda <= ponteiroDireita && vetor[ponteiroEsquerda].compareTo(pivo) <= 0 ) {
 					ponteiroEsquerda++;
 				}
-				while(ponteiroDireita >= ponteiroEsquerda && vetor[ponteiroDireita] > pivo) {
+				while(ponteiroDireita >= ponteiroEsquerda && vetor[ponteiroDireita].compareTo(pivo) > 0) {
 					ponteiroDireita--;
 				}
 				if(ponteiroEsquerda <= ponteiroDireita) {
@@ -39,8 +39,8 @@ public class QuickSort {
 		return ponteiroDireita;
 	}
 	
-	private void troca(int[] vetor, int i, int j) {
-		int aux = vetor[i]; 
+	private void troca(T[] vetor, int i, int j) {
+		T aux = vetor[i]; 
 		vetor[i] = vetor[j];
 		vetor[j] = aux;
 	}

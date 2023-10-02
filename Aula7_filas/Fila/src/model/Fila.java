@@ -33,7 +33,7 @@ public class Fila<T> {
 	
 	public T remove() throws Exception {
 		if(isEmpty()) {
-			throw new Exception("Pilha Vazia");
+			throw new Exception("Fila Vazia");
 		}
 		T dado = inicio.dado;
 		if(inicio == fim && inicio != null) { //fila de um elemento
@@ -60,7 +60,7 @@ public class Fila<T> {
 	
 	public int size() {
 		int cont  = 0;
-		if(isEmpty()) {
+		if(!isEmpty()) {
 			No<T> auxiliar = inicio;
 			while(auxiliar != null) {
 				cont++;
