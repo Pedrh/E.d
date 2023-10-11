@@ -1,0 +1,29 @@
+package view;
+
+import model.Lista;
+
+public class Principal {
+	static Lista<Integer> l = new Lista<>();
+	public static void main(String[] args) {
+		
+		
+		try {
+			l.addFirst(16);
+			l.addFirst(4);
+			l.addFirst(13);
+			l.addFirst(2);
+			l.addFirst(6);
+			l.addFirst(7);
+			l.addFirst(9);
+			l.addFirst(12);
+			l.addFirst(18);
+			l.addFirst(5);
+			l.addFirst(3);
+		
+			
+		} catch (Exception e) {
+			// TODO: handle exception
+		}
+	}
+
+}

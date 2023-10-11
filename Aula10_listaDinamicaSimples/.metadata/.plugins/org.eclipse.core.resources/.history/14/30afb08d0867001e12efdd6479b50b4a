@@ -1,0 +1,28 @@
+package controller;
+
+import model.Lista;
+import model.pilhaInt;
+
+public class InverteLista {
+
+	pilhaInt p = new pilhaInt();
+	public InverteLista() {
+		super();
+	}
+	
+	public Lista<Integer>  inveter(Lista<Integer> l, int tamanho) {
+		int cont = 0;
+		while(cont < tamanho) {
+			try {
+				int valor = l.get(cont);
+				p.push(valor);
+				l.removeFirst();
+			} catch (Exception e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+		}
+		return l;
+	}
+	
+}

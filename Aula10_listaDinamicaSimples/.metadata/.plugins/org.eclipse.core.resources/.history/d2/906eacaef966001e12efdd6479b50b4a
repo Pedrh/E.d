@@ -1,0 +1,18 @@
+package model;
+
+public class Lista<T> {
+
+	No<T> primeiro;
+
+	public Lista() {
+		primeiro = null;
+	}
+	
+	public boolean isEmpty() {
+		if(primeiro == null) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+}

@@ -1,0 +1,6 @@
+INDEX VERSION 1.134+C:\Users\Familia\OneDrive\Documentos\programas\eclipse\WorkSpace\E.d\Aula10_listaDinamicaSimples\.metadata\.plugins\org.eclipse.jdt.core
+107912159.index
+923605518.index
+4277538658.index
+2781812398.index
+387811273.index

@@ -1,0 +1,14 @@
+package controller;
+
+import model.pilhaInt;
+
+public class InverteLista {
+
+	pilhaInt p = new pilhaInt();
+	public InverteLista() {
+		super();
+	}
+	
+	
+
+}

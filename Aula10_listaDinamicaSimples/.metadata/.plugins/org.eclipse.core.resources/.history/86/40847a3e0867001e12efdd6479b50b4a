@@ -1,0 +1,17 @@
+package controller;
+
+import model.Lista;
+import model.pilhaInt;
+
+public class InverteLista {
+
+	pilhaInt p = new pilhaInt();
+	public InverteLista() {
+		super();
+	}
+	
+	public Lista<Integer>  inveter(Lista<Integer> l) {
+		return l;
+	}
+	
+}

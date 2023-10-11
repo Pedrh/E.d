@@ -1,0 +1,69 @@
+package model;
+
+public class Lista<T> {
+
+	No<T> primeiro;
+
+	public Lista() {
+		primeiro = null;
+	}
+	
+	public boolean isEmpty() {
+		if(primeiro == null) {
+			return true;
+		}else {
+			return false;
+		}
+	}
+	
+	public int size() {
+		int cont = 0;
+		if(!isEmpty()) {
+			No<T> auxiliar  = primeiro;
+			while(auxiliar != null) {
+				cont++;
+				auxiliar = auxiliar.proximo;
+			}
+		}
+		return cont;
+	}
+	
+	private No<T> getNo(int posicao) throws Exception{
+		if(!isEmpty()) {
+			throw new Exception("Lista vazia");
+		}
+		int tamanho = size();
+		if(posicao < 0 || posicao > tamanho - 1) {
+			throw new Exception("Posição inválida");
+		}
+		
+		int cont = 0;
+		No<T> auxiliar = primeiro;
+		while(cont < posicao) {
+			auxiliar = auxiliar.proximo;
+			cont++;
+		}
+		
+		return auxiliar;
+	}
+	
+	public void addFirst(T valor) {
+		No<T> elemento = new No<>();
+		elemento.dado = valor;
+		elemento.proximo = primeiro;
+		primeiro = elemento;	
+	}
+	
+	public void addLast(T valor) throws Exception {
+		if(!isEmpty()) {
+			throw new Exception("Lista vazia");
+		}
+		int tamanho = size();
+		No<T> elemento = new No<>();
+		elemento.dado = valor;
+		elemento.proximo = null;
+		No<T> ultimo = getNo(tamanho - 1);
+		
+	}
+	
+}
