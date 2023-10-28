@@ -19,7 +19,6 @@ public class ModificacaoCadastroController {
 
 	private void novoArquivo(Lista<Cliente> lista, String nomeArquivo) throws IOException {
 		File file = new File("C:\\TEMP\\" + nomeArquivo);
-		if (file.exists() && file.isFile()) {
 			int tamanho = lista.size();
 			StringBuffer buffer = new StringBuffer();
 
@@ -38,11 +37,9 @@ public class ModificacaoCadastroController {
 			print.flush();
 			print.close();
 			Writer.close();
-		} else {
-			throw new IOException("Arquivo inválido");
-		}
 	}
-
+	
+	
 	public void novoCadastro(int idadeMin, int idadeMax, Double LimiteCredito) throws IOException {
 		Lista<Cliente> listaNova = new Lista<>();
 		File file = new File("C:\\TEMP\\cadastro.csv");
@@ -51,15 +48,16 @@ public class ModificacaoCadastroController {
 			InputStreamReader leitor = new InputStreamReader(fluxo);
 			BufferedReader buffer = new BufferedReader(leitor);
 			String linha = buffer.readLine();
-			
+
 			int idade;
 			double credito;
 			while (linha != null) {
+				linha = linha.replace("\"", "");
 				String[] dados = linha.split(";");
 				idade = Integer.parseInt(dados[2]);
 				credito = Double.parseDouble(dados[3]);
 				try {
-					
+
 					if (idade > idadeMin && idade < idadeMax) {
 						if (credito > LimiteCredito) {
 							Cliente cliente = new Cliente();
@@ -76,9 +74,9 @@ public class ModificacaoCadastroController {
 					e.printStackTrace();
 				}
 			}
-			String nomeArquivo = "idade " + idadeMin +"-"+ idadeMax + " limite" + LimiteCredito + ".csv";
+			String nomeArquivo = "idade " + idadeMin + "-" + idadeMax + " limite" + LimiteCredito + ".csv";
 			novoArquivo(listaNova, nomeArquivo);
-			
+
 			fluxo.close();
 			leitor.close();
 			buffer.close();
