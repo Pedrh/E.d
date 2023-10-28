@@ -55,10 +55,11 @@ public class ModificacaoCadastroController {
 			int idade;
 			double credito;
 			while (linha != null) {
+				String[] dados = linha.split(";");
+				idade = Integer.parseInt(dados[2]);
+				credito = Double.parseDouble(dados[3]);
 				try {
-					String[] dados = linha.split(";");
-					idade = Integer.parseInt(dados[2]);
-					credito = Double.parseDouble(dados[3]);
+					
 					if (idade > idadeMin && idade < idadeMax) {
 						if (credito > LimiteCredito) {
 							Cliente cliente = new Cliente();
