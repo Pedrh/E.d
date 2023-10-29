@@ -28,19 +28,18 @@ public class Principal {
 			
 			Morador encontrarMorador = new Morador();
 			encontrarMorador.nome = "Karina";
-			encontrarMorador.andar = 1;
+			encontrarMorador.apt = 102;
 			portaria.consultaMorador(encontrarMorador);
 			
 			Morador excluirMorador = new Morador();
 			excluirMorador.nome = "Felipe";
-			excluirMorador.andar = 1;
+			excluirMorador.apt = 101;
 			portaria.excluirMorador(excluirMorador);
 			
 			encontrarMorador = new Morador();
 			encontrarMorador.nome = "Felipe";
-			encontrarMorador.andar = 1;
+			encontrarMorador.apt = 101;
 			portaria.consultaMorador(encontrarMorador);
-			
 			
 		} catch (Exception e) {
 			// TODO Auto-generated catch block

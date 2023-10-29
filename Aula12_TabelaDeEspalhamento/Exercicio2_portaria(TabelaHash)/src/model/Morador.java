@@ -26,7 +26,7 @@ public class Morador {
 
 	@Override
 	public int hashCode() {
-		int posicao = andar;
+		int posicao = apt/100;
 		posicao -= 1;
 		return posicao;
 	}

@@ -34,7 +34,7 @@ public class PortariaController {
 		boolean moradorEncontrado = false;
 		for(int i = 0; i < tamanho; i++) {
 			Morador moradorDaVez = listaApto[posicao].get(i);
-			if(morador.nome == moradorDaVez.nome) {
+			if(morador.nome.toLowerCase().charAt(0) == moradorDaVez.nome.toLowerCase().charAt(0)) {
 				System.out.println("\n"+moradorDaVez.toString());
 				moradorEncontrado = true;
 				break;
@@ -53,7 +53,7 @@ public class PortariaController {
 		
 		for(int i = 0; i < tamanho; i++) {
 			Morador moradorDaVez = listaApto[posicao].get(i);
-			if(morador.nome == moradorDaVez.nome) {
+			if(morador.nome.toLowerCase().charAt(0) == moradorDaVez.nome.toLowerCase().charAt(0)) {
 				listaApto[posicao].remove(i);
 				System.out.println("Morador removido");
 				break;
