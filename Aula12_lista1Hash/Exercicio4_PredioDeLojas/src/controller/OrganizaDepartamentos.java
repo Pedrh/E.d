@@ -103,9 +103,9 @@ public class OrganizaDepartamentos {
 		boolean removido =false;
 		for(int i=0; i < tamanhoLista; i++) {
 			departamento depAtual = (departamento) lista[posicao].get(i);
-			System.out.println(depAtual.nomeDepartamento);
-			System.out.println(dep.nomeDepartamento);
-			if(depAtual.nomeDepartamento == dep.nomeDepartamento) {
+//			System.out.println(depAtual.nomeDepartamento);
+//			System.out.println(dep.nomeDepartamento);
+			if(depAtual.nomeDepartamento.equals(dep.nomeDepartamento)) {
 				lista[posicao].remove(i);
 				removido = true;
 				System.out.println("Departamento removido");
@@ -123,8 +123,8 @@ public class OrganizaDepartamentos {
 		boolean removido = false;
 		for(int i=0; i < tamanhoLista; i++) {
 			departamento depAtual = (departamento) lista[posicao].get(i);
-			if(depAtual.nomeDepartamento == dep.nomeDepartamento) {
-				System.out.println(dep.toString());
+			if(depAtual.nomeDepartamento.equals(dep.nomeDepartamento)) {
+				System.out.println(depAtual.toString());
 				removido = true;
 				break;
 			}
