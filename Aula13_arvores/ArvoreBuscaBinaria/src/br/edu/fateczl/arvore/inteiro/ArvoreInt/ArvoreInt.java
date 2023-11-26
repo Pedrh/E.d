@@ -42,7 +42,7 @@ public class ArvoreInt {
 			try {
 				No no = nodeSearch(raiz, valor);
 				int level = nodeLevel(raiz, valor);
-				System.out.println(no.dado + ": nivel" + level);
+				System.out.println(no.dado + ": nivel " + level);
 			} catch (Exception e) {
 				e.printStackTrace();
 			}
